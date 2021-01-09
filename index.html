@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">        
+        <title>CityRating </title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                
+                <span class="text">City <i class="fas fa-city logo"></i> Rating</span>
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search a place">
+                    <button class="search__button">
+                        <!-- SVG Scalable Vector Graphic -->
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpeg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Danilo</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-rss"></use>
+                                </svg>
+                                <span>Feed</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item side-nav__item--active ">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                </svg>
+                                <span>Favorite</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-line-graph"></use>
+                                </svg>
+                                <span>Statistic</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-cog"></use>
+                                </svg>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; Copyright - 2021
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/castle.jpg" alt="" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/church.jpg" alt="" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/park.jpg" alt="" class="gallery__photo">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Limerick, Ireland 
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-outlined"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Limerick, Ireland</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.6</div>
+                            <div class="overview__rating-count">6 votes</div>
+                        </div>
+
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Once upon a time there was an Irish city ... A lot of people think of a malicious poem when they hear the word Limerick, but in fact, the city inspires much more than the well-known giggles. Medieval castles and churches give the city a grandiose atmosphere, while the pubs are filled with locals and lively students who always want another pint of Guinness. The Hunt Museum has a collection of pieces from the most influential and important artists in history, while the Foynes Flying Boat Museum will delight visitors of all ages with its extravagant flying machines.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Hospital</li>
+                                <li class="list__item">Parks</li>
+                                <li class="list__item">Airport</li>
+                                <li class="list__item">Shopping Centre</li>
+                                <li class="list__item">Museum</li>
+                                <li class="list__item">churches</li>
+                                <li class="list__item">Castles</li>
+                                <li class="list__item">Pet Friendly</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Danilo and other friends rated this place:
+                                </p>
+                                <div class="recommend__friends">
+                                    <!-- <img src="img/user.jpeg" alt="" class="recommend__photo">
+                                    <img src="img/user.jpeg" alt="" class="recommend__photo"> -->
+                                    <img src="img/user.jpeg" alt="" class="recommend__photo">
+                                    <img src="img/cris.jpg" alt="" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <figure class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Since I left Brazil, I never had met such an amazing place to live as Limerick. It is also very good for study, work and also makes friends..
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user.jpeg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Danilo Silva</p>
+                                        <p class="review__user-date">9th Jan 2021</p>
+                                    </div>
+                                    <div class="review__rating">8.4</div>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Limerick city has everything I need! Fabulous places to visit, safe paths to jog, and a great infrastructure with supermarkets, shopping centres...
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/cris.jpg" alt="" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Cris Antonio</p>
+                                        <p class="review__user-date">2th Jan 2021</p>
+                                    </div>
+                                    <div class="review__rating">8.2</div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                        </figure>
+                    </div>
+                    <div class="cta">
+                        <div class="cta__book-now">Clicking here you can find out other places like this</div>
+                        <button class="cta__button">
+                            <span class="cta__button-visible">Explore</span>
+                            <span class="cta__button-invisible">Explore</span>
+                        </button>   
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
